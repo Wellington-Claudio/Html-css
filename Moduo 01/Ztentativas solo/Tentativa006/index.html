@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinámica</title>
+    <link rel="shortcut icon" href="Alecive-Flatwoken-Apps-File-Javascript.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Ultilização source midia type dentro de picture vou criar uma imagem responsiva</h1>
+    <p>Metodo usado para melhorar a experiência do usuário em diferentes telas!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/perfil-300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/perfil-700.jpg" type="image/jpg">
+        <img src="imagens/perfil-1000.jpg" alt="Imagem flexível">
+    </picture>
+    <p>Veja que logo após aumentar ou diminuir a imagem a foto do rapaz bonito acompanha responsivamente.</p>
+</body>
+</html>

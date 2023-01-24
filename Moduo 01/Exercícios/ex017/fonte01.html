@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style> 
+        body{
+            font-family: ;
+            font-size: 16px;
+            font-weight: normal  ; /*lighter normal bold bolder*/
+            font-style: normal;
+            text-decoration: underline;
+        }
+        /*
+        Medidas absolutas
+        cm(centimetro),mn(milimetro),in(polegada),px(pixel),pt(ponto (texto impresso)),pc(poica(texto impresso))
+
+        Medidas relativas
+        em(relativo ao tamanho atual da fonte),ex(relativo a altura x da fonte),rem(relativo a fonte do body),vw(largura da tela),vh(altura da tela) todos são em porcentagem.
+        
+        Recomendação da W3C (px e em)
+        16px geralmente e 1em
+        weight,width,height
+        Peso,largura,altura.
+        */
+        h1{
+            
+            /*shorthand font
+            font-style -> fonte-weight -> font-size -> font-famaly
+            
+            font-family:sans-serfi;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic
+            */
+            font: italic bolder 3em sans-serif;
+        }
+        h2{
+            font: bold 2em sans-serif
+        }
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis laborum sit iure minus ut repellendus, aliquid est, expedita rem explicabo, illum aspernatur praesentium at culpa consequuntur reprehenderit excepturi tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet veritatis assumenda porro unde nesciunt! Ducimus ad ullam optio aliquid at. Nam ipsum veniam optio nesciunt pariatur mollitia eos nulla?</p>
+    <h2>Subtítulo do exercício.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio fugit, natus enim delectus ea ut quos maxime corporis iste obcaecati, soluta officiis, tenetur omnis! Omnis eligendi libero pariatur neque.</p>
+</body>
+</html>
