@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One:wght@400;700;900 & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Handlee & display = swap');
+:root{
+    --font1: Verdana, Geneva, tahoma ,sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Handlee', cursiva;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+
+:root{
+    
+}
+
+html, body {
+    font-family: var(--font1);
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font2);
+    font-size: 4em;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh ;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
