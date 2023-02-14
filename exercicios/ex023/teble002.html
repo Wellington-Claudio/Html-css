@@ -8,16 +8,38 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 5px;
         }
-        thead, tfoot {
+        thead, tfoot  {
             background-color: gray;
             color: white;
         }
@@ -40,10 +62,14 @@
         --> 
 
         <table>
+            <caption>
+                População das unidades federativas
+            </caption>
             <thead>
+                
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th> <!-- Vai dizer que os dados "Estado" vão estar nessa coluna-->
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -158,10 +184,17 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td>000</td>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>21.768.791</strong></td>
                 </tr>
             </tfoot>
         </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit porro. Consequuntur voluptatibus quibusdam, alias, repellat nesciunt fuga sunt magni maxime, cum nemo consequatur! Animi, quo? Ex obcaecati necessitatibus culpa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sed fugit ut id quisquam exercitationem recusandae voluptatem nostrum tempora mollitia iusto cumque dolorem consectetur dolores, illum quidem deleniti accusamus beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, a deleniti. Voluptatum labore ad vitae nulla incidunt sunt architecto dicta nihil nisi harum ex voluptates sequi blanditiis soluta, totam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad unde nesciunt id sequi? Voluptatum accusamus dolorum eligendi quaerat consequatur possimus! Animi quidem quod voluptate nihil vero laborum magnam aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi ipsam nesciunt explicabo, voluptatibus doloribus porro aut, repudiandae possimus quasi itaque placeat culpa non. Unde nostrum iste inventore molestiae impedit?</p>
+        
 </body>
 </html>
