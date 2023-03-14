@@ -1,0 +1,35 @@
+div#q1{
+    position: absolute;
+    background-color: darkcyan;
+    width: 500px;
+    height: 500px;
+    position: absolute ;
+    left: 50%;
+    top: 50%;
+    
+}
+
+div#q2{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+
+}
+div#imagem{
+    
+    background-image: url('https://img.freepik.com/fotos-gratis/foto-de-paisagem-das-belas-montanhas-de-cholatse-ao-lado-de-um-corpo-de-agua-em-khumbu-nepal_181624-24825.jpg?w=826&t=st=1678751561~exp=1678752161~hmac=63533f9c7846224527fa0691f15b2f0d1d3e9f9c55ee07018340cbc77ad1f301');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+
+    height: 600px;
+
+}
